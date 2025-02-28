@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set consistent base font size */
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #e4e4e7;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .shadow-2xl {
@@ -13,4 +21,18 @@ body {
 /* Enhance the card shadows for more depth */
 article {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add viewport consistency for all devices */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Prevent text size inflation on mobile */
+@media screen and (max-width: 767px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
 }

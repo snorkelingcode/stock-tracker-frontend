@@ -13,8 +13,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   source,
 }) => {
   return (
-    <article className="relative rounded-xl shadow-2xl bg-neutral-400 h-[295px] w-[340px] max-md:w-full max-md:max-w-[340px] max-sm:h-[250px] transform transition-all">
-      <div className="px-10 py-8 max-sm:p-5">
+    <article className="relative rounded-xl shadow-2xl bg-neutral-400 h-[295px] w-full md:max-w-[340px] max-sm:h-[250px]">
+      <div className="px-6 md:px-10 py-8 max-sm:p-5">
         <p className="mb-1.5 text-xl text-stone-900 max-sm:text-lg">
           {productLine}
         </p>

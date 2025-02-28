@@ -9,7 +9,7 @@ interface ListingButtonProps {
 export const ListingButton: React.FC<ListingButtonProps> = ({ text }) => {
   return (
     <button
-      className="absolute left-2/4 text-2xl italic font-light bg-indigo-400 rounded-3xl -translate-x-2/4 bottom-[9px] h-[66px] text-stone-900 w-[257px] max-sm:text-xl max-sm:h-[50px] max-sm:w-[200px]"
+      className="absolute left-1/2 -translate-x-1/2 bottom-[9px] text-xl md:text-2xl italic font-light bg-indigo-400 rounded-3xl h-[50px] md:h-[66px] text-stone-900 w-[200px] md:w-[257px]"
       aria-label={text}
     >
       {text}

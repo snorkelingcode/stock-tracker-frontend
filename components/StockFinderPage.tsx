@@ -6,26 +6,28 @@ import { ProductCard } from "./ProductCard";
 
 export const StockFinderPage: React.FC = () => {
   return (
-    <main className="px-20 py-16 min-h-screen bg-zinc-300 max-md:p-10 max-sm:p-5">
-      <HeadingSection />
-      <section className="flex gap-5 justify-between max-w-6xl mx-auto max-md:flex-col max-md:items-center">
-        <ProductCard
-          productLine="Product Line"
-          product="Product"
-          source="Source"
-        />
-        <ProductCard
-          productLine="Product Line"
-          product="Product"
-          source="Source"
-        />
-        <ProductCard
-          productLine="Product Line"
-          product="Product"
-          source="Source"
-        />
-      </section>
-    </main>
+    <div className="min-h-screen bg-zinc-300">
+      <div className="container mx-auto px-4 sm:px-6 py-16 max-w-7xl">
+        <HeadingSection />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+          <ProductCard
+            productLine="Product Line"
+            product="Product"
+            source="Source"
+          />
+          <ProductCard
+            productLine="Product Line"
+            product="Product"
+            source="Source"
+          />
+          <ProductCard
+            productLine="Product Line"
+            product="Product"
+            source="Source"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

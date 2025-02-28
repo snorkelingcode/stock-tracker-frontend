@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
     
     // Replace with your actual Python backend URL
     const backendUrl = process.env.BACKEND_API_URL || 'http://localhost:8000';
-    const apiKey = process.env.API_KEY || 'your-default-api-key';
+    const apiKey = process.env.API_KEY || 'pokemoncard-stock-webscraper-fe.vercel.app';
     
     const response = await fetch(`${backendUrl}/api/scrape`, {
       method: 'POST',

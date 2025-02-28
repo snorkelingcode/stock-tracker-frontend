@@ -5,18 +5,18 @@ interface ProductCardProps {
   productLine: string;
   product: string;
   source: string;
-  url?: string;
+  productUrl?: string;
 }
 
 export const ProductCard: React.FC<ProductCardProps> = ({
   productLine,
   product,
   source,
-  url,
+  productUrl,
 }) => {
   const handleClick = () => {
-    if (url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
+    if (productUrl) {
+      window.open(productUrl, '_blank', 'noopener,noreferrer');
     }
   };
 

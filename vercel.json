@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "framework": "nextjs",
+    "outputDirectory": ".next",
+    "env": {
+      "BACKEND_API_URL": "https://your-python-backend-url.com",
+      "API_KEY": "your-api-key-here"
+    },
+    "regions": ["cdg1"]
+  }

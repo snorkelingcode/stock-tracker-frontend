@@ -8,7 +8,7 @@ export const StockFinderPage: React.FC = () => {
   return (
     <main className="px-20 py-16 min-h-screen bg-zinc-300 max-md:p-10 max-sm:p-5">
       <HeadingSection />
-      <section className="flex gap-5 justify-between max-md:flex-col max-md:items-center">
+      <section className="flex gap-5 justify-between max-w-6xl mx-auto max-md:flex-col max-md:items-center">
         <ProductCard
           productLine="Product Line"
           product="Product"

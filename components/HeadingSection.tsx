@@ -12,3 +12,5 @@ export const HeadingSection: React.FC = () => {
     </header>
   );
 };
+
+export default HeadingSection;

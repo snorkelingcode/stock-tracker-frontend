@@ -20,3 +20,5 @@ export const ListingButton: React.FC<ListingButtonProps> = ({ text }) => {
     </button>
   );
 };
+
+export default ListingButton;
